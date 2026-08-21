@@ -96,6 +96,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
   padding: 12px 32px;
   border-radius: 30px;
 }
@@ -143,6 +145,10 @@ nav a:hover {
   font-family: 'Courier New', Courier, monospace;
   font-size: 0.9rem;
   color: #cfc9ee;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 10px;
 }
 
 .linux-controls {
@@ -378,10 +384,17 @@ footer {
   color: #a89fd6;
 }
 
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
 .footer-links a {
   color: #fff;
   text-decoration: none;
-  margin: 0 8px;
   transition: color 0.2s;
   display: inline-flex;
   align-items: center;
@@ -439,14 +452,32 @@ footer {
 /* Responsive */
 @media (max-width: 800px) {
   header {
-    padding: 20px;
+    padding: 15px 10px;
     flex-direction: column;
     gap: 15px;
   }
 
+  .floating-nav {
+    padding: 12px 20px;
+  }
+
   nav a {
-    margin: 0 10px;
+    margin: 5px 8px;
     font-size: 14px;
+  }
+
+  .hero {
+    width: calc(100% - 30px);
+    margin: 30px auto;
+    padding: 20px 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .content-section {
+    padding: 0 15px;
   }
 
   .grid {
@@ -458,19 +489,17 @@ footer {
     transform: none;
   }
 
-  .hero {
-    width: calc(100% - 40px);
-    margin: 40px auto;
-    padding: 20px;
+  .experience-card, .card {
+    padding: 10px 15px 20px;
   }
 
-  .content-section {
-    padding: 0 20px;
+  .linux-controls span {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
   }
 
-  .experience-card {
-    padding: 10px 20px 20px;
+  .linux-header {
+    padding: 10px 12px;
   }
-
-
 }
