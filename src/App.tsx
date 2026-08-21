@@ -70,7 +70,15 @@ function App() {
           <h1 className="typing-animation">Hi! I'm Sara.</h1>
         </div>
         <p>I am a Computer Science student at Toronto Metropolitan University, exploring the realms of software & data engineering.</p>
-        <span className="tag glow-on-load">Check out my work below!</span>
+        <div className="hero-footer">
+          <span className="tag glow-on-load">Check out my work below!</span>
+          <div className="marquee-container">
+            <div className="marquee-content">
+              <span>Python • REST API • Flask • Google Cloud • Apps Script • HTML • CSS • JavaScript • Netlify •&nbsp;</span>
+              <span>Python • REST API • Flask • Google Cloud • Apps Script • HTML • CSS • JavaScript • Netlify •&nbsp;</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <section id="experience" className="content-section">
