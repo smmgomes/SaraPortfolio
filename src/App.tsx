@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { InteractiveCard } from './components/InteractiveCard';
 import { ClosedFile } from './components/ClosedFile';
 import { experiences, activities, projects } from './data/portfolioData';
@@ -8,23 +8,6 @@ type CardState = 'default' | 'expanded' | 'minimized' | 'closed';
 function App() {
   const [cardStates, setCardStates] = useState<Record<string, CardState>>({});
   const [showCopyPopup, setShowCopyPopup] = useState(false);
-
-  useEffect(() => {
-    const updateSky = () => {
-      const hour = new Date().getHours();
-      let skyClass = 'sky-night';
-      if (hour >= 6 && hour < 17) {
-        skyClass = 'sky-day';
-      } else if (hour >= 17 && hour < 20) {
-        skyClass = 'sky-evening';
-      }
-      document.body.className = skyClass;
-    };
-
-    updateSky();
-    const interval = setInterval(updateSky, 60000);
-    return () => clearInterval(interval);
-  }, []);
 
   const handleCopyEmail = (e: React.MouseEvent) => {
     e.preventDefault();

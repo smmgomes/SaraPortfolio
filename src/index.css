@@ -13,24 +13,7 @@ body {
   overflow-x: hidden;
   position: relative;
   color: #eae6ff;
-  transition: background 1s ease;
 }
-
-body.sky-day {
-  background: radial-gradient(circle at 20% 20%, #6eb1ff 0%, #3a7bd5 40%, #4a90e2 70%, #87cefa 100%);
-}
-
-body.sky-evening {
-  background: radial-gradient(circle at 20% 20%, #ff7e5f 0%, #c678dd 40%, #e06c75 70%, #5c258d 100%);
-}
-
-body.sky-night {
-  background: radial-gradient(circle at 20% 20%, #2e2e38 0%, #16161c 40%, #23232e 70%, #34343f 100%);
-}
-
-body.sky-day .stars { opacity: 0.1; }
-body.sky-evening .stars { opacity: 0.5; }
-body.sky-night .stars { opacity: 1; }
 
 h1,
 h2,
