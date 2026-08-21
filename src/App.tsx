@@ -58,9 +58,9 @@ function App() {
 
       <header>
         <nav className="glass floating-nav">
-          <a href="#experience">Experience</a>
-          <span className="nav-divider">|</span>
           <a href="#projects">Projects</a>
+          <span className="nav-divider">|</span>
+          <a href="#experience">Experience</a>
           <span className="nav-divider">|</span>
           <a href="#extracurriculars">Activities</a>
           <span className="nav-divider">|</span>
@@ -84,19 +84,19 @@ function App() {
         </div>
       </div>
 
-      <section id="experience" className="content-section">
-        <h2 className="section-title">Work Experience</h2>
-        {renderCards(experiences)}
-        <div className="closed-files-container" id="closed-experience">
-          {renderClosedFiles(experiences)}
-        </div>
-      </section>
-
       <section id="projects" className="content-section">
         <h2 className="section-title">Projects</h2>
         {renderCards(projects, false)}
         <div className="closed-files-container" id="closed-projects">
           {renderClosedFiles(projects)}
+        </div>
+      </section>
+
+      <section id="experience" className="content-section">
+        <h2 className="section-title">Work Experience</h2>
+        {renderCards(experiences)}
+        <div className="closed-files-container" id="closed-experience">
+          {renderClosedFiles(experiences)}
         </div>
       </section>
 
