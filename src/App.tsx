@@ -59,8 +59,11 @@ function App() {
       <header>
         <nav className="glass floating-nav">
           <a href="#experience">Experience</a>
+          <span className="nav-divider">|</span>
           <a href="#extracurriculars">Activities</a>
+          <span className="nav-divider">|</span>
           <a href="#projects">Projects</a>
+          <span className="nav-divider">|</span>
           <a href="#contact">Contact</a>
         </nav>
       </header>
