@@ -60,9 +60,9 @@ function App() {
         <nav className="glass floating-nav">
           <a href="#experience">Experience</a>
           <span className="nav-divider">|</span>
-          <a href="#extracurriculars">Activities</a>
-          <span className="nav-divider">|</span>
           <a href="#projects">Projects</a>
+          <span className="nav-divider">|</span>
+          <a href="#extracurriculars">Activities</a>
           <span className="nav-divider">|</span>
           <a href="#contact">Contact</a>
         </nav>
@@ -72,7 +72,7 @@ function App() {
         <div className="typing-container">
           <h1 className="typing-animation">Hi! I'm Sara.</h1>
         </div>
-        <p>I am a Computer Science student at Toronto Metropolitan University, exploring the realms of software & data engineering.</p>
+        <p>I am a Computer Science student at Toronto Metropolitan University, exploring the realms of ML, data analytics, software & data engineering.</p>
         <div className="hero-footer">
           <span className="tag glow-on-load">Check out my work below!</span>
           <div className="marquee-container">
@@ -92,19 +92,19 @@ function App() {
         </div>
       </section>
 
-      <section id="extracurriculars" className="content-section">
-        <h2 className="section-title">Activities</h2>
-        {renderCards(activities)}
-        <div className="closed-files-container" id="closed-extracurriculars">
-          {renderClosedFiles(activities)}
-        </div>
-      </section>
-
       <section id="projects" className="content-section">
         <h2 className="section-title">Projects</h2>
         {renderCards(projects, false)}
         <div className="closed-files-container" id="closed-projects">
           {renderClosedFiles(projects)}
+        </div>
+      </section>
+
+      <section id="extracurriculars" className="content-section">
+        <h2 className="section-title">Activities</h2>
+        {renderCards(activities)}
+        <div className="closed-files-container" id="closed-extracurriculars">
+          {renderClosedFiles(activities)}
         </div>
       </section>
 

@@ -17,13 +17,9 @@ export const experiences: CardItem[] = [
     filename: 'Automation_Developer.md',
     title: 'Automation Developer',
     company: 'Registrarial Support Services (TMU)',
-    skills: 'Google Apps Script, JavaScript, Automation, Bug Fixing',
+    skills: 'Google Apps Script, JavaScript, Workflow Automation, QA',
     fullDesc: (
-      <ul>
-        <li>Optimized and automated current operational processes by editing Google Apps Scripts to create mail merges and automate forms.</li>
-        <li>Automated employee number tracking for ServiceHub, enabling faster reporting for the team.</li>
-        <li>Fixed bugs across the existing codebase to improve the reliability of current operational processes.</li>
-      </ul>
+      <p>I used Google Apps Script to parse, segment, and securely route thousands of confidential academic records into 100+ departmental cloud directories. I created projects for ServiceHub, turning manual data-entry and filing tasks into fast, automated processes that significantly cut down processing time. I also led quality assurance and system testing by setting up isolated staging environments which made sure no real data was ever at risk before anything went live. I also applied defensive programming techniques and strict error checks to prevent the system from crashing when users entered unpredictable or incomplete data.</p>
     ),
   },
   {
@@ -31,13 +27,9 @@ export const experiences: CardItem[] = [
     filename: 'Media_Graphics_Assistant.md',
     title: 'Media and Graphics Assistant',
     company: 'Student Life & Learning Support (TMU)',
-    skills: 'Canva, Social Media Analytics, Graphic Design, Reporting',
+    skills: 'Social Media Analytics, Graphic Design, Marketing, Video Editing',
     fullDesc: (
-      <ul>
-        <li>Designed digital and print marketing assets including posters and short-form videos within a fast-paced environment.</li>
-        <li>Supported production and management of social media campaigns across Instagram and TikTok, contributing to 65,000+ total views.</li>
-        <li>Engineered a streamlined Instagram reporting workflow that standardized performance metrics and shortened reporting turnaround time.</li>
-      </ul>
+      <p>I designed digital and print marketing assets, including posters and short-form videos, in a fast-paced environment using Canva, and enjoyed the creative side of editing video content for our campaigns. I also noticed our Instagram reporting process was slow and manual, so I took the initiative to build a streamlined workflow using Google Apps Script, Python, and cloud infrastructure to pull performance data directly from Instagram. Cleaning and organizing that raw data into clean rows and columns ended up saving the team a lot of time and standardized how we tracked our metrics going forward.</p>
     ),
   },
   {
@@ -45,13 +37,9 @@ export const experiences: CardItem[] = [
     filename: 'Student_Support_Specialist.md',
     title: 'Student Support Specialist',
     company: 'Student Life & Learning Support (TMU)',
-    skills: 'Google Suite, Portal Management Systems, Communication',
+    skills: 'Google Suite, Portal Management Systems, Administration, Customer Service',
     fullDesc: (
-      <ul>
-        <li>Delivered administrative support for the Student Life & Learning Support reception, utilizing portal management systems to ensure smooth operations.</li>
-        <li>Assisted students with appointment, workshop, test, and exam bookings via portal systems, managing email and phone communications with proficiency in Google Suite.</li>
-        <li>Coordinated appointment schedules, resolving conflicts and delays effectively through strong communication and interpersonal skills.</li>
-      </ul>
+      <p>I delivered administrative support for the Student Life & Learning Support reception, using portal management systems to ensure smooth day-to-day operations. I assisted students with appointment, workshop, test, and exam bookings through these portal systems, while managing email and phone communications with proficiency in Google Suite.</p>
     ),
   }
 ];
@@ -62,12 +50,9 @@ export const activities: CardItem[] = [
     filename: 'PACS_Event_Lead.md',
     title: 'Event Lead',
     company: 'Practical Applications of Computer Science (PACS) TMU',
-    skills: 'Event Planning, Social Media Campaigns, Team Leadership',
+    skills: 'HTML, CSS, Event Planning, Social Media Campaigns, Team Leadership',
     fullDesc: (
-      <ul>
-        <li>Promoted PACS x USSTM Haunted House event through creative social media campaigns, boosting attendance.</li>
-        <li>Collaborated with a dedicated team to organize and execute events, ensuring seamless coordination and fostering a strong teamwork environment.</li>
-      </ul>
+      <p>I promoted the PACS x USSTM Haunted House event through creative social media campaigns, which helped boost overall attendance. I also worked closely with a dedicated team to organize and execute events, making sure everything ran smoothly while building a strong sense of teamwork. Alongside that, I collaborated with a team to design and develop the USSTM website using HTML and CSS, focusing on improving accessibility and making navigation easier for users.</p>
     ),
   },
   {
@@ -77,10 +62,7 @@ export const activities: CardItem[] = [
     company: 'Women in Math (WiM) TMU',
     skills: 'Event Logistics, Social Media Strategy, Communication',
     fullDesc: (
-      <ul>
-        <li>Promoted WiM events through social media, encouraging student participation and engagement.</li>
-        <li>Collaborated with the Math Department\'s administration to coordinate event logistics and budgeting, ensuring smooth execution through effective communication and organizational skills.</li>
-      </ul>
+      <p>I promoted WiM events through social media, encouraging student participation and engagement. I also collaborated with the Math Department's administration to coordinate event logistics and budgeting, ensuring smooth execution through effective communication and organizational skills.</p>
     ),
   }
 ];
