@@ -167,7 +167,7 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-  max-width: 640px;
+  max-width: 900px;
   margin: 60px auto 40px;
   padding: 10px 40px 40px;
   text-align: left;
@@ -178,11 +178,79 @@ nav a:hover {
   margin: 14px 0 10px;
 }
 
+.typing-container {
+  display: inline-block;
+}
+
+.typing-animation {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid #fff;
+  margin: 0;
+  width: 15ch;
+  animation: typing 1.5s steps(15, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 15ch;
+  }
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #fff;
+  }
+}
+
 .hero p {
   font-size: 1.1rem;
   line-height: 1.6;
   color: #d8d2ff;
-  max-width: 480px;
+}
+
+.glow-on-load {
+  animation: 
+    bold-once 4s ease-in-out 1.5s 1,
+    glow-pulse 4s ease-in-out 5.5s infinite;
+}
+
+@keyframes bold-once {
+  0% {
+    text-shadow: 0 0 0px transparent, 0 0 0px transparent, 0 0 0px transparent;
+  }
+
+  30% {
+    text-shadow: 0 0 1px #fff, 0 0 12px rgba(216, 210, 255, 0.8), 0 0 24px rgba(216, 210, 255, 0.4);
+  }
+
+  100% {
+    text-shadow: 0 0 0px transparent, 0 0 0px transparent, 0 0 0px transparent;
+  }
+}
+
+@keyframes glow-pulse {
+  0% {
+    text-shadow: 0 0 0px transparent;
+  }
+
+  30% {
+    text-shadow: 0 0 12px rgba(216, 210, 255, 0.8), 0 0 24px rgba(216, 210, 255, 0.4);
+  }
+
+  100% {
+    text-shadow: 0 0 0px transparent;
+  }
 }
 
 .tag {
@@ -472,7 +540,8 @@ footer {
     transform: none;
   }
 
-  .experience-card, .card {
+  .experience-card,
+  .card {
     padding: 10px 15px 20px;
   }
 

@@ -65,18 +65,12 @@ function App() {
         </nav>
       </header>
 
-      <div id="about" className="hero glass" style={{ overflow: 'hidden' }}>
-        <div className="linux-header">
-          <span className="linux-title">sara@portfolio:~/about</span>
-          <div className="linux-controls">
-            <span className="btn-minimize">_</span>
-            <span className="btn-expand">□</span>
-            <span className="btn-close">✕</span>
-          </div>
+      <div id="about" className="hero">
+        <div className="typing-container">
+          <h1 className="typing-animation">Hi! I'm Sara.</h1>
         </div>
-        <h1>Hi! I'm Sara.</h1>
-        <p>I am a Computer Science student at Toronto Metropolitan University, building tools, interfaces, and scripts from a quiet corner of the galaxy.</p>
-        <span className="tag">building from toronto ...usually at night</span>
+        <p>I am a Computer Science student at Toronto Metropolitan University, exploring the realms of software & data engineering.</p>
+        <span className="tag glow-on-load">Check out my work below!</span>
       </div>
 
       <section id="experience" className="content-section">
