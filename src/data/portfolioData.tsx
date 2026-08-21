@@ -92,7 +92,7 @@ export const projects: CardItem[] = [
     title: 'Automated Instagram Analytics ETL Pipeline',
     skills: <><span className="highlight-blue">Python</span>, REST API, <span className="highlight-green">Flask</span>, Cloud Platform, Apps Script</>,
     shortDesc: 'Automated ETL pipeline for Instagram performance data using Python and Flask.',
-    link: 'https://github.com/smmgomes',
+    link: 'https://github.com/smmgomes/metrics-automation',
     fullDesc: (
       <>
         <p>Designed and deployed an <span className="highlight">automated ETL pipeline</span> to collect, clean, and analyze Instagram performance data using <span className="highlight-blue">Python</span>, <span className="highlight-green">Flask</span>, and the <span className="highlight-purple">Instagram Graph API</span>, delivering structured, time-bucketed analytics in Google Sheets.</p>
@@ -106,25 +106,11 @@ export const projects: CardItem[] = [
     title: 'Responsive Weather Web-App',
     skills: <><span className="highlight-blue">HTML, CSS, JavaScript</span>, REST API, Netlify</>,
     shortDesc: 'Responsive multi-page weather web application using HTML, CSS, and JS.',
-    link: 'https://github.com/smmgomes',
+    link: 'https://github.com/smmgomes/WeatherApplication',
     fullDesc: (
       <>
         <p>Built a <span className="highlight">responsive weather web application</span> enabling users to search cities and view current conditions and hourly forecasts.</p>
         <p>Integrated <span className="highlight-purple">REST API calls</span> using <span className="highlight-blue">Fetch</span> and <span className="highlight-blue">async/await</span>, implemented error handling, and persisted data across pages using <span className="highlight-green">localStorage</span>.</p>
-      </>
-    ),
-  },
-  {
-    id: 'proj-3',
-    filename: 'Crocheting_Journal.html',
-    title: 'Crocheting Journal Website',
-    skills: <>HTML, CSS</>,
-    shortDesc: 'Visually engaging layouts integrating custom fonts and color schemes.',
-    link: 'https://github.com/smmgomes',
-    fullDesc: (
-      <>
-        <p>Showcased creativity through <span className="highlight">visually engaging layouts</span>, integrating custom fonts, background images, and personalized color schemes using <span className="highlight-blue">HTML and CSS</span>.</p>
-        <p>Designed <span className="highlight-purple">interactive navigation menus</span> with <span className="highlight-green">hover effects</span> and smooth scrolling.</p>
       </>
     ),
   }
