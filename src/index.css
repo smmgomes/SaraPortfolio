@@ -122,21 +122,47 @@ nav a:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  overflow: hidden;
 }
 
-.linux-title {
+.linux-title-container {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  flex: 1;
+  min-width: 0;
+  margin-right: 12px;
+}
+
+.linux-title-content {
+  display: inline-block;
+  white-space: nowrap;
   font-family: 'Courier New', Courier, monospace;
   font-size: 0.9rem;
   color: #cfc9ee;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding-right: 10px;
+  width: 100%;
+}
+
+.linux-title-content span:nth-child(2) {
+  display: none;
+}
+
+@keyframes scroll-linux-title {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .linux-controls {
   display: flex;
   gap: 8px;
+  flex-shrink: 0;
 }
 
 .linux-controls span {
@@ -231,7 +257,7 @@ nav a:hover {
   }
 
   30% {
-    text-shadow: 0 0 1px #fff, 0 0 12px rgba(216, 210, 255, 0.8), 0 0 24px rgba(216, 210, 255, 0.4);
+    text-shadow: 0 0 1px #fff, 0 0 12px rgba(255, 130, 200, 0.85), 0 0 24px rgba(255, 80, 170, 0.5);
   }
 
   100% {
@@ -245,7 +271,7 @@ nav a:hover {
   }
 
   30% {
-    text-shadow: 0 0 12px rgba(216, 210, 255, 0.8), 0 0 24px rgba(216, 210, 255, 0.4);
+    text-shadow: 0 0 12px rgba(255, 130, 200, 0.85), 0 0 24px rgba(255, 80, 170, 0.5);
   }
 
   100% {
@@ -589,5 +615,31 @@ footer {
 
   .linux-header {
     padding: 10px 12px;
+  }
+
+  .linux-title-container {
+    mask-image: linear-gradient(to right, black calc(100% - 20px), transparent);
+    -webkit-mask-image: linear-gradient(to right, black calc(100% - 20px), transparent);
+  }
+
+  .linux-title-content {
+    animation: scroll-linux-title 14s linear infinite;
+    text-overflow: clip;
+    overflow: visible;
+    width: auto;
+  }
+
+  .linux-title-content span:nth-child(2) {
+    display: inline;
+  }
+
+  .hero-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .marquee-container {
+    width: 100%;
   }
 }

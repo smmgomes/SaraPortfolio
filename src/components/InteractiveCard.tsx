@@ -43,7 +43,12 @@ export const InteractiveCard: React.FC<InteractiveCardProps> = ({
   return (
     <div className={classes} id={id}>
       <div className="linux-header">
-        <span className="linux-title">sara@portfolio:~/{filename}</span>
+        <div className="linux-title-container">
+          <div className="linux-title-content">
+            <span>sara@portfolio:~/{filename}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span>sara@portfolio:~/{filename}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          </div>
+        </div>
         <div className="linux-controls">
           <span className="btn-minimize" onClick={() => onMinimize(id)}>_</span>
           <span className="btn-expand" onClick={() => onExpand(id)}>□</span>
