@@ -21,7 +21,8 @@ h3,
 .logo,
 .tag,
 footer,
-.closed-file {
+.closed-file,
+nav a {
   font-family: 'Courier New', Courier, monospace;
 }
 
