@@ -160,6 +160,7 @@ nav a:hover {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -185,6 +186,37 @@ nav a:hover {
   color: #a89fd6;
   background: transparent;
   transition: all 0.2s ease;
+  animation: btn-pulse 1.8s ease-in-out 3;
+}
+
+.linux-controls .btn-minimize {
+  animation-delay: 0.8s;
+}
+
+.linux-controls .btn-expand {
+  animation-delay: 1.0s;
+}
+
+.linux-controls .btn-close {
+  animation-delay: 1.2s;
+}
+
+@keyframes btn-pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    background: transparent;
+    color: #a89fd6;
+    box-shadow: 0 0 0 transparent;
+  }
+
+  50% {
+    transform: scale(1.06);
+    background: rgba(255, 255, 255, 0.16);
+    color: #ffffff;
+    box-shadow: 0 0 5px rgba(216, 210, 255, 0.4);
+  }
 }
 
 .linux-controls span:hover {
@@ -252,7 +284,7 @@ nav a:hover {
 }
 
 .glow-on-load {
-  animation: 
+  animation:
     bold-once 4s ease-in-out 1.5s 1,
     glow-pulse 4s ease-in-out 5.5s infinite;
 }
@@ -327,8 +359,13 @@ nav a:hover {
 }
 
 @keyframes scroll-marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* Content Sections */
@@ -491,6 +528,39 @@ nav a:hover {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Highlights / Tech Tags */
+.highlight-purple {
+  color: #a172a9;
+  font-weight: 600;
+}
+
+/* Project Description Styling */
+.project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #cfc9ee;
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+
+.project-description p {
+  color: #cfc9ee;
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+
+.desc-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.desc-section strong {
+  font-size: 1rem;
+  letter-spacing: 0.3px;
 }
 
 /* Footer */

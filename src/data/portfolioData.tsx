@@ -76,10 +76,25 @@ export const projects: CardItem[] = [
     shortDesc: 'Automated ETL pipeline for Instagram performance data using Python and Flask.',
     link: 'https://github.com/smmgomes/metrics-automation',
     fullDesc: (
-      <>
-        <p>Designed and deployed an <span className="highlight">automated ETL pipeline</span> to collect, clean, and analyze Instagram performance data using <span className="highlight-blue">Python</span>, <span className="highlight-green">Flask</span>, and the <span className="highlight-purple">Instagram Graph API</span>, delivering structured, time-bucketed analytics in Google Sheets.</p>
-        <p>Streamlined manual reporting workflows by integrating <span className="highlight">Google Apps Script</span> with a cloud-hosted backend.</p>
-      </>
+      <div className="project-description">
+        <p>
+          This project came out of noticing a pattern in how my marketing team was handling reporting. Instead of watching the team pulling social media metrics manually every week, I decided to make this process automated for everyone.
+        </p>
+
+        <div className="desc-section">
+          <strong>What I built:</strong>
+          <p>
+            Using <span className="highlight-purple">Python</span>, <span className="highlight-purple">Flask</span>, <span className="highlight-purple">Google Apps Script</span>, and <span className="highlight-purple">REST APIs</span>, I put together an ETL pipeline that pulls the raw performance data, normalizes it, and organizes everything into time-bucketed analytics that land directly onto the team's preferred document platform. I connected <span className="highlight-purple">Google Apps Script</span> to a cloud-based backend so the whole thing runs off a single button, letting anyone be able to refresh without needing to touch code.
+          </p>
+        </div>
+
+        <div className="desc-section">
+          <strong>Why I made the choices I did:</strong>
+          <p>
+            <span className="highlight-purple">Flask</span> gave me the right amount of structure without extra overhead for a tool with a single purpose, and <span className="highlight-purple">Google Suite</span> kept things familiar for the team instead of introducing something new. Parsing raw JSON responses from the <span className="highlight-purple">Graph API</span>, handling missing fields, stripping formatting artifacts from captions, and aggregating everything into standardized time windows was actually the most fun part to work through.
+          </p>
+        </div>
+      </div>
     ),
   },
   {
