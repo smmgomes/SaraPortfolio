@@ -6,20 +6,25 @@ import { SiGoogle } from 'react-icons/si';
 import { FaFileWord, FaFileExcel, FaFilePowerpoint } from 'react-icons/fa';
 
 const skillIcons = [
+  // Languages
   { name: 'Python', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" style={{ width: '1em', height: '1em' }} alt="Python" /> },
-  { name: 'REST API / Postman', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" style={{ width: '1em', height: '1em' }} alt="Postman" /> },
-  { name: 'Flask', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" style={{ width: '1em', height: '1em' }} alt="Flask" /> },
-  { name: 'Google Cloud', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" style={{ width: '1em', height: '1em' }} alt="Google Cloud" /> },
-  { name: 'Google Apps Script', icon: <SiGoogle color="#4285F4" /> },
+  { name: 'JavaScript', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" style={{ width: '1em', height: '1em' }} alt="JavaScript" /> },
   { name: 'HTML5', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" style={{ width: '1em', height: '1em' }} alt="HTML5" /> },
   { name: 'CSS3', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" style={{ width: '1em', height: '1em' }} alt="CSS3" /> },
-  { name: 'JavaScript', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" style={{ width: '1em', height: '1em' }} alt="JavaScript" /> },
-  { name: 'Netlify', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg" style={{ width: '1em', height: '1em' }} alt="Netlify" /> },
+
+  // Tools
+  { name: 'Flask', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" style={{ width: '1em', height: '1em' }} alt="Flask" /> },
+  { name: 'REST API / Postman', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" style={{ width: '1em', height: '1em' }} alt="Postman" /> },
   { name: 'Git', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" style={{ width: '1em', height: '1em' }} alt="Git" /> },
-  { name: 'GitHub', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" style={{ width: '1em', height: '1em', filter: 'invert(1)' }} alt="GitHub" /> },
   { name: 'Microsoft Word', icon: <FaFileWord color="#2B579A" /> },
   { name: 'Microsoft Excel', icon: <FaFileExcel color="#217346" /> },
   { name: 'Microsoft PowerPoint', icon: <FaFilePowerpoint color="#B7472A" /> },
+
+  // Platforms
+  { name: 'Google Cloud', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" style={{ width: '1em', height: '1em' }} alt="Google Cloud" /> },
+  { name: 'Google Apps Script', icon: <SiGoogle color="#4285F4" /> },
+  { name: 'Netlify', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg" style={{ width: '1em', height: '1em' }} alt="Netlify" /> },
+  { name: 'GitHub', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" style={{ width: '1em', height: '1em', filter: 'invert(1)' }} alt="GitHub" /> },
 ];
 
 type CardState = 'default' | 'expanded' | 'minimized' | 'closed';
