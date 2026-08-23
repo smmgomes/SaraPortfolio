@@ -2,19 +2,7 @@ import { useState } from 'react';
 import { InteractiveCard } from './components/InteractiveCard';
 import { ClosedFile } from './components/ClosedFile';
 import { experiences, activities, projects } from './data/portfolioData';
-import {
-  SiPython,
-  SiFlask,
-  SiGooglecloud,
-  SiGoogle,
-  SiJavascript,
-  SiHtml5,
-  SiCss,
-  SiNetlify,
-  SiGit,
-  SiGithub,
-  SiPostman
-} from 'react-icons/si';
+import { SiGoogle } from 'react-icons/si';
 import { FaFileWord, FaFileExcel, FaFilePowerpoint } from 'react-icons/fa';
 
 const skillIcons = [
