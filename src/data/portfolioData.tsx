@@ -105,10 +105,17 @@ export const projects: CardItem[] = [
     shortDesc: 'Responsive multi-page weather web application using HTML, CSS, and JS.',
     link: 'https://github.com/smmgomes/WeatherApplication',
     fullDesc: (
-      <>
-        <p>Built a <span className="highlight">responsive weather web application</span> enabling users to search cities and view current conditions and hourly forecasts.</p>
-        <p>Integrated <span className="highlight-purple">REST API calls</span> using <span className="highlight-blue">Fetch</span> and <span className="highlight-blue">async/await</span>, implemented error handling, and persisted data across pages using <span className="highlight-green">localStorage</span>.</p>
-      </>
+      <div className="project-description">
+        <p>
+          Yes, that is the most typical project to exist, but it was actually one of my first client-side projects I have done to experiment with my interests. I like front end, but I wanted to see how far I could push a simple idea before reaching for a framework, so I kept this one to just <span className="highlight-purple">HTML</span>, <span className="highlight-purple">CSS</span>, and <span className="highlight-purple">JavaScript</span>.
+        </p>
+        <p>
+          The app lets you search a city and pull up current conditions along with an hourly forecast, using <span className="highlight-purple">fetch</span> and <span className="highlight-purple">async/await</span> to call a weather <span className="highlight-purple">REST API</span>. I handled errors along the way and used <span className="highlight-purple">localStorage</span> to persist data across pages, so the experience holds together even as you move between views. On the forecast side, I worked with template literals and DOM manipulation to render everything dynamically, including formatting dates and times, converting temperatures, and calculating daily highs and lows.
+        </p>
+        <p>
+          The part I had the most fun with was the visual layer. I added a canvas background that animates based on the time of day, and built the layout to be responsive using media queries and flex or grid, so the forecast rows scroll comfortably on mobile too.
+        </p>
+      </div>
     ),
   }
 ];
