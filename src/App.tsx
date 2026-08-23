@@ -2,6 +2,37 @@ import { useState } from 'react';
 import { InteractiveCard } from './components/InteractiveCard';
 import { ClosedFile } from './components/ClosedFile';
 import { experiences, activities, projects } from './data/portfolioData';
+import {
+  SiPython,
+  SiFlask,
+  SiGooglecloud,
+  SiGoogle,
+  SiJavascript,
+  SiHtml5,
+  SiCss,
+  SiNetlify,
+  SiGit,
+  SiGithub,
+  SiPostman
+} from 'react-icons/si';
+import { FaFileWord, FaFileExcel, FaFilePowerpoint } from 'react-icons/fa';
+
+const skillIcons = [
+  { name: 'Python', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" style={{ width: '1em', height: '1em' }} alt="Python" /> },
+  { name: 'REST API / Postman', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" style={{ width: '1em', height: '1em' }} alt="Postman" /> },
+  { name: 'Flask', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" style={{ width: '1em', height: '1em' }} alt="Flask" /> },
+  { name: 'Google Cloud', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" style={{ width: '1em', height: '1em' }} alt="Google Cloud" /> },
+  { name: 'Google Apps Script', icon: <SiGoogle color="#4285F4" /> },
+  { name: 'HTML5', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" style={{ width: '1em', height: '1em' }} alt="HTML5" /> },
+  { name: 'CSS3', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" style={{ width: '1em', height: '1em' }} alt="CSS3" /> },
+  { name: 'JavaScript', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" style={{ width: '1em', height: '1em' }} alt="JavaScript" /> },
+  { name: 'Netlify', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg" style={{ width: '1em', height: '1em' }} alt="Netlify" /> },
+  { name: 'Git', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" style={{ width: '1em', height: '1em' }} alt="Git" /> },
+  { name: 'GitHub', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" style={{ width: '1em', height: '1em', filter: 'invert(1)' }} alt="GitHub" /> },
+  { name: 'Microsoft Word', icon: <FaFileWord color="#2B579A" /> },
+  { name: 'Microsoft Excel', icon: <FaFileExcel color="#217346" /> },
+  { name: 'Microsoft PowerPoint', icon: <FaFilePowerpoint color="#B7472A" /> },
+];
 
 type CardState = 'default' | 'expanded' | 'minimized' | 'closed';
 
@@ -77,8 +108,22 @@ function App() {
           <span className="tag glow-on-load">Check out my work below!</span>
           <div className="marquee-container">
             <div className="marquee-content">
-              <span>Python • REST API • Flask • Google Cloud • Apps Script • HTML • CSS • JavaScript • Netlify •&nbsp;</span>
-              <span>Python • REST API • Flask • Google Cloud • Apps Script • HTML • CSS • JavaScript • Netlify •&nbsp;</span>
+              <div className="marquee-track">
+                {skillIcons.map((skill, index) => (
+                  <span key={`skill-${index}`} className="skill-icon-item">
+                    {skill.icon}
+                    <span className="skill-name">{skill.name}</span>
+                  </span>
+                ))}
+              </div>
+              <div className="marquee-track">
+                {skillIcons.map((skill, index) => (
+                  <span key={`skill-dup-${index}`} className="skill-icon-item">
+                    {skill.icon}
+                    <span className="skill-name">{skill.name}</span>
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>

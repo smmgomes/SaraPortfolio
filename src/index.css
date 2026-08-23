@@ -320,11 +320,12 @@ nav a:hover {
 .tag {
   display: inline-block;
   margin-top: 18px;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   background: rgba(255, 255, 255, 0.12);
   padding: 6px 14px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: 1000;
 }
 
 .hero-footer {
@@ -333,7 +334,6 @@ nav a:hover {
   gap: 15px;
   margin-top: 18px;
   width: 100%;
-  overflow: hidden;
 }
 
 .hero-footer .tag {
@@ -347,15 +347,69 @@ nav a:hover {
   position: relative;
   mask-image: linear-gradient(to right, transparent, black 15px, black calc(100% - 15px), transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, black 15px, black calc(100% - 15px), transparent);
+  padding-top: 60px;
+  margin-top: -60px;
 }
 
 .marquee-content {
-  display: inline-block;
-  white-space: nowrap;
+  display: flex;
+  width: max-content;
   animation: scroll-marquee 25s linear infinite;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-right: 24px;
+}
+
+.skill-icon-item {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.00rem;
   color: #a89fd6;
+  transition: transform 0.2s, color 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+
+.skill-name {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+  background: rgba(161, 114, 169, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(161, 114, 169, 0.4);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 0.9rem;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
+  z-index: 10;
+}
+
+.skill-icon-item:hover {
+  color: #a172a9;
+  transform: scale(1.15);
+}
+
+.skill-icon-item:hover .skill-name {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-5px);
 }
 
 @keyframes scroll-marquee {
