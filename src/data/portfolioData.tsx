@@ -19,7 +19,14 @@ export const experiences: CardItem[] = [
     company: 'Registrarial Support Services (TMU)',
     skills: 'Google Apps Script, JavaScript, Workflow Automation, QA',
     fullDesc: (
-      <p>I used Google Apps Script to parse, segment, and securely route thousands of confidential academic records into 100+ departmental cloud directories. I created projects for ServiceHub, turning manual data-entry and filing tasks into fast, automated processes that significantly cut down processing time. I also led quality assurance and system testing by setting up isolated staging environments which made sure no real data was ever at risk before anything went live. I also applied defensive programming techniques and strict error checks to prevent the system from crashing when users entered unpredictable or incomplete data.</p>
+      <div className="project-description">
+        <p>
+          This job was quite fun for me. I got to work on projects where I got to automate things in a real operational setting, and it happened to be at my own school. The RSS is one of the most important departments holding the school together, managing everything about student records.
+        </p>
+        <p>
+          I enjoyed making automated things using <span className="highlight-purple">Google Apps Script</span> to parse, segment, and route confidential academic records into the right departmental cloud directories, something that used to be handled manually. Since this involved real student records, I built isolated staging environments to validate changes before deployment. I also implemented defensive checks and input validation to prevent runtime failures from unpredictable or malformed data. I also got to collaborate with our school's main front-line office, the ServiceHub, where I turned manual data entry and filing tasks into automated processes.
+        </p>
+      </div>
     ),
   },
   {
