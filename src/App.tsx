@@ -42,7 +42,7 @@ function App() {
 
   const handleCopyEmail = (e: React.MouseEvent) => {
     e.preventDefault();
-    navigator.clipboard.writeText('sara.mary.m.gomes@gmail.com');
+    navigator.clipboard.writeText('s1gomes@torontomu.ca');
     setShowCopyPopup(true);
     setTimeout(() => setShowCopyPopup(false), 2000);
   };
