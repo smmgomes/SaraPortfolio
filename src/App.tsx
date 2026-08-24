@@ -86,7 +86,7 @@ function App() {
           <span className="nav-divider">|</span>
           <a href="#experience">Experience</a>
           <span className="nav-divider">|</span>
-          <a href="#extracurriculars">Leadership & Involvement</a>
+          <a href="#extracurriculars">Extracurriculars</a>
           <span className="nav-divider">|</span>
           <a href="#contact">Contact</a>
         </nav>
