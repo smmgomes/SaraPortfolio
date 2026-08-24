@@ -1,7 +1,17 @@
 import { useState } from 'react';
 import { InteractiveCard } from './components/InteractiveCard';
 import { ClosedFile } from './components/ClosedFile';
+import { MemeModal } from './components/MemeModal';
 import { experiences, activities, projects } from './data/portfolioData';
+import meme1 from './assets/memes/17960f47f2fdb59d37f880535469d80f.jpg';
+import meme2 from './assets/memes/29a76f5005bb4449cf8960705adc4d78.jpg';
+import meme3 from './assets/memes/90cf8b3d5bf68fbce2e9156f0fd1046b.jpg';
+import meme4 from './assets/memes/d0a46938c1721f54e3b236a1b61dfd54.jpg';
+import meme5 from './assets/memes/0c7453b8b3f4e8854ff822b1e226bedb.jpg';
+import meme6 from './assets/memes/1ea3b3f1b3b41fcc8d8493f14df65cf8.jpg';
+import meme7 from './assets/memes/51ab0656e42a4224e6f0713e4207ca4d.jpg';
+import meme8 from './assets/memes/c200f325d3c3712d319d341667ccae1e.jpg';
+import meme9 from './assets/memes/cdb4819deb819b6fa866b6ba6cf99d7b.jpg';
 import { SiGoogle } from 'react-icons/si';
 import { FaFileWord, FaFileExcel, FaFilePowerpoint } from 'react-icons/fa';
 
@@ -32,6 +42,19 @@ type CardState = 'default' | 'expanded' | 'minimized' | 'closed';
 function App() {
   const [cardStates, setCardStates] = useState<Record<string, CardState>>({});
   const [showCopyPopup, setShowCopyPopup] = useState(false);
+  const [isMemeModalOpen, setIsMemeModalOpen] = useState(false);
+
+  const memePlaceholders = [
+    meme4,
+    meme1,
+    meme2,
+    meme3,
+    meme5,
+    meme6,
+    meme7,
+    meme8,
+    meme9
+  ];
 
   const handleCopyEmail = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -159,6 +182,14 @@ function App() {
         </div>
       )}
 
+
+
+      <MemeModal 
+        isOpen={isMemeModalOpen} 
+        onClose={() => setIsMemeModalOpen(false)} 
+        memes={memePlaceholders} 
+      />
+
       <footer id="contact">
         - - - * - - -<br />
         <div className="footer-links">
@@ -183,7 +214,16 @@ function App() {
           </a>
         </div>
         <br />
-        Made on Earth...for now.
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}>
+          Made on Earth...for now.
+          <div 
+            className="easter-egg-file"
+            onClick={() => setIsMemeModalOpen(true)}
+            style={{ display: 'inline-flex', fontSize: '1rem' }}
+          >
+            <span className="easter-egg-icon" style={{ fontSize: '1.1rem' }}>📁</span>
+          </div>
+        </div>
       </footer>
     </>
   );
