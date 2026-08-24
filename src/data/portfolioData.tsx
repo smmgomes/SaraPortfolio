@@ -36,22 +36,36 @@ export const experiences: CardItem[] = [
     company: 'Student Life & Learning Support (TMU)',
     skills: 'Social Media Analytics, Graphic Design, Marketing, Video Editing',
     fullDesc: (
-      <p>I designed digital and print marketing assets, including posters and short-form videos, in a fast-paced environment using Canva, and enjoyed the creative side of editing video content for our campaigns. I also noticed our Instagram reporting process was slow and manual, so I took the initiative to build a streamlined workflow using Google Apps Script, Python, and cloud infrastructure to pull performance data directly from Instagram. Cleaning and organizing that raw data into clean rows and columns ended up saving the team a lot of time and standardized how we tracked our metrics going forward.</p>
-    ),
-  },
-  {
-    id: 'exp-3',
-    filename: 'Student_Support_Specialist.md',
-    title: 'Student Support Specialist',
-    company: 'Student Life & Learning Support (TMU)',
-    skills: 'Google Suite, Portal Management Systems, Administration, Customer Service',
-    fullDesc: (
-      <p>I delivered administrative support for the Student Life & Learning Support reception, using portal management systems to ensure smooth day-to-day operations. I assisted students with appointment, workshop, test, and exam bookings through these portal systems, while managing email and phone communications with proficiency in Google Suite.</p>
+      <div className="project-description">
+        <p>
+          I designed digital and print marketing assets, including posters and short-form videos, in a fast-paced environment using <span className="highlight-purple">Canva</span>, <span className="highlight-purple">VLLO</span>, and <span className="highlight-purple">Capcut</span>, and enjoyed the creative side of editing video content for our campaigns. This job led me to explore one of my creative hobbies, video editing and design, which made it so much fun to do.
+        </p>
+        <p>
+          I worked at SLLS, one of the big campus departments, and noticed our Instagram reporting process was slow and manual, so I took the initiative to build a more streamlined system for it, which ended up saving the team time and standardizing how we tracked our metrics going forward (more project details can be found in this page's projects section).
+        </p>
+      </div>
     ),
   }
 ];
 
 export const activities: CardItem[] = [
+  {
+    id: 'act-3',
+    filename: 'Student_Support_Specialist.md',
+    title: 'Student Support Specialist',
+    company: 'Student Life & Learning Support (TMU)',
+    skills: 'Google Suite, Portal Management Systems, Administration, Customer Service',
+    fullDesc: (
+      <div className="project-description">
+        <p>
+          This role had me right at the front desk of SLLS, which meant I got a lot of direct, day-to-day interaction with students, something I really enjoyed.
+        </p>
+        <p>
+          I helped students book appointments, workshops, tests, and exams through our portal systems, and handled a good amount of email and phone communication along the way, so staying organized and quick on my feet became second nature.
+        </p>
+      </div>
+    ),
+  },
   {
     id: 'act-1',
     filename: 'PACS_Event_Lead.md',
@@ -59,7 +73,7 @@ export const activities: CardItem[] = [
     company: 'Practical Applications of Computer Science (PACS) TMU',
     skills: 'HTML, CSS, Event Planning, Social Media Campaigns, Team Leadership',
     fullDesc: (
-      <p>I promoted the PACS x USSTM Haunted House event through creative social media campaigns, which helped boost overall attendance. I also worked closely with a dedicated team to organize and execute events, making sure everything ran smoothly while building a strong sense of teamwork. Alongside that, I collaborated with a team to design and develop the USSTM website using HTML and CSS, focusing on improving accessibility and making navigation easier for users.</p>
+      <p>Being Event Lead for PACS let me combine my creative and organizational sides, which made it fun to take on. I ran social media promotion for our Haunted House event with USSTM and saw attendance pick up because of it, while also helping design and develop the USSTM website in HTML and CSS, focused on better accessibility and navigation.</p>
     ),
   },
   {
@@ -69,7 +83,7 @@ export const activities: CardItem[] = [
     company: 'Women in Math (WiM) TMU',
     skills: 'Event Logistics, Social Media Strategy, Communication',
     fullDesc: (
-      <p>I promoted WiM events through social media, encouraging student participation and engagement. I also collaborated with the Math Department's administration to coordinate event logistics and budgeting, ensuring smooth execution through effective communication and organizational skills.</p>
+      <p>With Women in Math, I handled social media promotion to get students excited about our events, and got to work directly with the Math Department's administration on logistics and budgeting, which was my first real taste of coordinating with a department rather than just a student team.</p>
     ),
   }
 ];

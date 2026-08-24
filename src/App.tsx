@@ -86,7 +86,7 @@ function App() {
           <span className="nav-divider">|</span>
           <a href="#experience">Experience</a>
           <span className="nav-divider">|</span>
-          <a href="#extracurriculars">Activities</a>
+          <a href="#extracurriculars">Leadership & Involvement</a>
           <span className="nav-divider">|</span>
           <a href="#contact">Contact</a>
         </nav>
@@ -139,7 +139,7 @@ function App() {
       </section>
 
       <section id="extracurriculars" className="content-section">
-        <h2 className="section-title">Activities</h2>
+        <h2 className="section-title">Leadership & Involvement</h2>
         {renderCards(activities)}
         <div className="closed-files-container" id="closed-extracurriculars">
           {renderClosedFiles(activities)}
