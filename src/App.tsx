@@ -13,7 +13,7 @@ import meme7 from './assets/memes/51ab0656e42a4224e6f0713e4207ca4d.jpg';
 import meme8 from './assets/memes/c200f325d3c3712d319d341667ccae1e.jpg';
 import meme9 from './assets/memes/cdb4819deb819b6fa866b6ba6cf99d7b.jpg';
 import { SiGoogle } from 'react-icons/si';
-import { FaFileWord, FaFileExcel, FaFilePowerpoint } from 'react-icons/fa';
+import { FaFileWord, FaFileExcel, FaFilePowerpoint, FaFolderOpen, FaBriefcase, FaStar, FaEnvelope } from 'react-icons/fa';
 
 const skillIcons = [
   // Languages
@@ -105,13 +105,25 @@ function App() {
 
       <header>
         <nav className="glass floating-nav">
-          <a href="#projects">Projects</a>
+          <a href="#projects" aria-label="Projects">
+            <span className="nav-text">Projects</span>
+            <FaFolderOpen className="nav-icon" />
+          </a>
           <span className="nav-divider">|</span>
-          <a href="#experience">Experience</a>
+          <a href="#experience" aria-label="Experience">
+            <span className="nav-text">Experience</span>
+            <FaBriefcase className="nav-icon" />
+          </a>
           <span className="nav-divider">|</span>
-          <a href="#extracurriculars">Extracurriculars</a>
+          <a href="#extracurriculars" aria-label="Extracurriculars">
+            <span className="nav-text">Extracurriculars</span>
+            <FaStar className="nav-icon" />
+          </a>
           <span className="nav-divider">|</span>
-          <a href="#contact">Contact</a>
+          <a href="#contact" aria-label="Contact">
+            <span className="nav-text">Contact</span>
+            <FaEnvelope className="nav-icon" />
+          </a>
         </nav>
       </header>
 
@@ -184,10 +196,10 @@ function App() {
 
 
 
-      <MemeModal 
-        isOpen={isMemeModalOpen} 
-        onClose={() => setIsMemeModalOpen(false)} 
-        memes={memePlaceholders} 
+      <MemeModal
+        isOpen={isMemeModalOpen}
+        onClose={() => setIsMemeModalOpen(false)}
+        memes={memePlaceholders}
       />
 
       <footer id="contact">
@@ -216,7 +228,7 @@ function App() {
         <br />
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}>
           Made on Earth...for now.
-          <div 
+          <div
             className="easter-egg-file"
             onClick={() => setIsMemeModalOpen(true)}
             style={{ display: 'inline-flex', fontSize: '1rem' }}
