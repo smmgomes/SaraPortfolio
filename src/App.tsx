@@ -12,6 +12,10 @@ import meme6 from './assets/memes/1ea3b3f1b3b41fcc8d8493f14df65cf8.jpg';
 import meme7 from './assets/memes/51ab0656e42a4224e6f0713e4207ca4d.jpg';
 import meme8 from './assets/memes/c200f325d3c3712d319d341667ccae1e.jpg';
 import meme9 from './assets/memes/cdb4819deb819b6fa866b6ba6cf99d7b.jpg';
+import meme10 from './assets/memes/454cb2d5fa6049eddac143a8defb8c39.jpg';
+import meme11 from './assets/memes/52e79e58427e1c0cdddc452b615bdeb7.jpg';
+import meme12 from './assets/memes/821cf61716fddb2e7b52a58727a775ff.jpg';
+import meme13 from './assets/memes/d1425b35d9226d66e591770116e586c0.jpg';
 import { SiGoogle } from 'react-icons/si';
 import { FaFileWord, FaFileExcel, FaFilePowerpoint, FaFolderOpen, FaBriefcase, FaStar, FaEnvelope } from 'react-icons/fa';
 
@@ -53,7 +57,11 @@ function App() {
     meme6,
     meme7,
     meme8,
-    meme9
+    meme9,
+    meme10,
+    meme11,
+    meme12,
+    meme13
   ];
 
   const handleCopyEmail = (e: React.MouseEvent) => {
