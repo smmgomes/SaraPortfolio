@@ -73,7 +73,14 @@ export const activities: CardItem[] = [
     company: 'Practical Applications of Computer Science (PACS) TMU',
     skills: 'HTML, CSS, Event Planning, Social Media Campaigns, Team Leadership',
     fullDesc: (
-      <p>Being Event Lead for PACS let me combine my creative and organizational sides, which made it fun to take on. I ran social media promotion for our Haunted House event with USSTM and saw attendance pick up because of it, while also helping design and develop the USSTM website in HTML and CSS, focused on better accessibility and navigation.</p>
+      <div className="project-description">
+        <p>
+          Being Event Lead for PACS let me combine my creative and organizational sides, which made it fun to take on.
+        </p>
+        <p>
+          I ran social media promotion for our Haunted House event with USSTM and saw attendance pick up because of it, while also helping design and develop the USSTM website in <span className="highlight-purple">HTML</span> and <span className="highlight-purple">CSS</span>, focused on better accessibility and navigation.
+        </p>
+      </div>
     ),
   },
   {
@@ -83,7 +90,14 @@ export const activities: CardItem[] = [
     company: 'Women in Math (WiM) TMU',
     skills: 'Event Logistics, Social Media Strategy, Communication',
     fullDesc: (
-      <p>With Women in Math, I handled social media promotion to get students excited about our events, and got to work directly with the Math Department's administration on logistics and budgeting, which was my first real taste of coordinating with a department rather than just a student team.</p>
+      <div className="project-description">
+        <p>
+          With Women in Math, I handled social media promotion to get students excited about our events.
+        </p>
+        <p>
+          I also got to work directly with the Math Department's administration on logistics and budgeting, which was my first real taste of coordinating with a department rather than just a student team.
+        </p>
+      </div>
     ),
   }
 ];
