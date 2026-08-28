@@ -31,6 +31,42 @@ export const experiences: CardItem[] = [
   },
   {
     id: 'exp-2',
+    filename: 'Data_Visualization_Developer.md',
+    title: 'Data Visualization Developer',
+    company: 'DoneMaker via Riipen',
+    skills: 'React, TypeScript, SQL, Supabase, Data Visualization, Dashboard Design, UI/UX, JavaScript, REST APIs',
+    fullDesc: (
+      <div className="project-description">
+        <p>
+          I learned quite a bit here, especially around the challenging parts of turning raw data into something people actually want to use. The goal of this project was to build a clean visual that accurately reflects user's content performances to help users make important decisions.
+        </p>
+
+
+        <p>
+          I got to work with <span className="highlight-purple">Postgresql</span> and <span className="highlight-purple">Supabase</span>, designing schema changes and writing migration files so content could be grouped accurately across platforms. I built unified views for my charts' source of data, wrote targeted queries for dynamic dropdowns, and built multi-conditional charts that helps user make quick decisions.
+        </p>
+
+
+        <p>
+          On the frontend, I worked in <span className="highlight-purple">React</span> and <span className="highlight-purple">TypeScript</span> to implement client side transformations like time bucketing in <span className="highlight-purple">JS</span>. I mapped database rows to complex components and rendered tooltips showing metric averages and best-performing posts. I also modified server logic so the database correctly saved new identifiers.
+        </p>
+
+
+        <p>
+          I had a lot of fun exploring the creative side of this project. I conceptualized custom chart models to show engagement. I designed an overview grid with small sparkline previews, then letting users click into a single platform to see a detailed area charts with dynamic filters.
+
+          I also had to design for edge cases like loading skeletons and empty states, then documented the core design principles and logic.
+        </p>
+
+
+        <p>
+          Working with a team of developers with different goals but a shared need for architectural alignment and planning end to end verification also taught me the value of continuous collaboration in a cross functional team environment.
+        </p>
+      </div>
+    ),
+  },
+  {
+    id: 'exp-3',
     filename: 'Media_Graphics_Assistant.md',
     title: 'Media and Graphics Assistant',
     company: 'Student Life & Learning Support (TMU)',
