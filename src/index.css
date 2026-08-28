@@ -1,4 +1,3 @@
-/* General Setup */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +8,7 @@
 body {
   min-height: 100vh;
   font-family: 'Segoe UI', Roboto, 'Inter', Arial, sans-serif;
-  background: radial-gradient(circle at 20% 20%, #2e2e38 0%, #16161c 40%, #23232e 70%, #34343f 100%);
+  background: radial-gradient(circle at 20% 20%, #443b32 0%, #241414 50%, #484151 100%);
   overflow-x: hidden;
   position: relative;
   color: #eae6ff;
@@ -26,7 +25,6 @@ nav a {
   font-family: 'Courier New', Courier, monospace;
 }
 
-/* Space Background Background */
 .stars {
   position: fixed;
   top: 0;
@@ -120,7 +118,6 @@ nav a {
 }
 
 
-/* Navigation */
 header {
   position: relative;
   z-index: 2;
@@ -167,7 +164,6 @@ nav a:hover {
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
-/* Glassmorphism */
 .glass {
   position: relative;
   z-index: 2;
@@ -180,7 +176,6 @@ nav a:hover {
   transition: all 0.3s ease;
 }
 
-/* Linux Window Header */
 .linux-header {
   display: flex;
   justify-content: space-between;
@@ -291,7 +286,6 @@ nav a:hover {
   color: #fff;
 }
 
-/* Hero Section */
 .hero {
   max-width: 900px;
   margin: 60px auto 40px;
@@ -484,7 +478,6 @@ nav a:hover {
   }
 }
 
-/* Content Sections */
 .content-section {
   position: relative;
   z-index: 2;
@@ -501,7 +494,6 @@ nav a:hover {
   color: #fff;
 }
 
-/* Closed Files Container */
 .closed-files-container {
   display: flex;
   flex-direction: column;
@@ -534,7 +526,6 @@ nav a:hover {
   color: #fff;
 }
 
-/* Experience Cards */
 .experience-card {
   padding: 10px 30px 30px;
   margin-bottom: 20px;
@@ -565,7 +556,6 @@ nav a:hover {
   margin-bottom: 8px;
 }
 
-/* Projects Grid */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -592,7 +582,6 @@ nav a:hover {
   line-height: 1.5;
 }
 
-/* Interactive Card States */
 .interactive-card .full-desc {
   display: none;
   margin-top: 15px;
@@ -608,7 +597,6 @@ nav a:hover {
 
 .interactive-card.expanded {
   grid-column: 1 / -1;
-  /* Span full width when expanded (if in grid) */
   transform: scale(1.02);
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
 }
@@ -646,13 +634,11 @@ nav a:hover {
   }
 }
 
-/* Highlights / Tech Tags */
 .highlight-purple {
   color: #a172a9;
   font-weight: 600;
 }
 
-/* Project Description Styling */
 .project-description {
   display: flex;
   flex-direction: column;
@@ -679,7 +665,6 @@ nav a:hover {
   letter-spacing: 0.3px;
 }
 
-/* Footer */
 footer {
   position: relative;
   z-index: 2;
@@ -754,7 +739,6 @@ footer {
   }
 }
 
-/* Responsive */
 @media (max-width: 800px) {
   header {
     padding: 15px 10px;
@@ -851,7 +835,6 @@ footer {
   }
 }
 
-/* Easter Egg File */
 .easter-egg-container {
   display: flex;
   justify-content: center;
@@ -888,7 +871,6 @@ footer {
   font-size: 24px;
 }
 
-/* Meme Modal */
 .meme-modal-overlay {
   position: fixed;
   top: 0;

@@ -21,13 +21,11 @@ import { SiGoogle } from 'react-icons/si';
 import { FaFileWord, FaFileExcel, FaFilePowerpoint, FaFolderOpen, FaBriefcase, FaStar, FaEnvelope } from 'react-icons/fa';
 
 const skillIcons = [
-  // Languages
   { name: 'Python', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" style={{ width: '1em', height: '1em' }} alt="Python" /> },
   { name: 'JavaScript', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" style={{ width: '1em', height: '1em' }} alt="JavaScript" /> },
   { name: 'HTML5', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" style={{ width: '1em', height: '1em' }} alt="HTML5" /> },
   { name: 'CSS3', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" style={{ width: '1em', height: '1em' }} alt="CSS3" /> },
 
-  // Tools
   { name: 'Flask', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" style={{ width: '1em', height: '1em' }} alt="Flask" /> },
   { name: 'REST API / Postman', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" style={{ width: '1em', height: '1em' }} alt="Postman" /> },
   { name: 'Git', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" style={{ width: '1em', height: '1em' }} alt="Git" /> },
@@ -35,7 +33,6 @@ const skillIcons = [
   { name: 'Microsoft Excel', icon: <FaFileExcel color="#217346" /> },
   { name: 'Microsoft PowerPoint', icon: <FaFilePowerpoint color="#B7472A" /> },
 
-  // Platforms
   { name: 'Google Cloud', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" style={{ width: '1em', height: '1em' }} alt="Google Cloud" /> },
   { name: 'Google Apps Script', icon: <SiGoogle color="#4285F4" /> },
   { name: 'Netlify', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg" style={{ width: '1em', height: '1em' }} alt="Netlify" /> },
