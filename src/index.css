@@ -80,13 +80,13 @@ nav a {
 .stars::before {
   background-image:
     radial-gradient(2px 2px at 15% 25%, #fff, transparent),
-    radial-gradient(8px 8px at 15% 25%, rgba(255,255,255,0.4), transparent),
+    radial-gradient(8px 8px at 15% 25%, rgba(255, 255, 255, 0.4), transparent),
     radial-gradient(2px 2px at 35% 75%, #fff, transparent),
-    radial-gradient(6px 6px at 35% 75%, rgba(255,255,255,0.3), transparent),
+    radial-gradient(6px 6px at 35% 75%, rgba(255, 255, 255, 0.3), transparent),
     radial-gradient(2px 2px at 65% 15%, #fff, transparent),
-    radial-gradient(8px 8px at 65% 15%, rgba(255,255,255,0.5), transparent),
+    radial-gradient(8px 8px at 65% 15%, rgba(255, 255, 255, 0.5), transparent),
     radial-gradient(2px 2px at 85% 80%, #fff, transparent),
-    radial-gradient(6px 6px at 85% 80%, rgba(255,255,255,0.4), transparent);
+    radial-gradient(6px 6px at 85% 80%, rgba(255, 255, 255, 0.4), transparent);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   animation: twinkle 2s infinite ease-in-out;
@@ -95,21 +95,28 @@ nav a {
 .stars::after {
   background-image:
     radial-gradient(2px 2px at 10% 85%, #fff, transparent),
-    radial-gradient(8px 8px at 10% 85%, rgba(255,255,255,0.4), transparent),
+    radial-gradient(8px 8px at 10% 85%, rgba(255, 255, 255, 0.4), transparent),
     radial-gradient(2px 2px at 45% 40%, #fff, transparent),
-    radial-gradient(6px 6px at 45% 40%, rgba(255,255,255,0.3), transparent),
+    radial-gradient(6px 6px at 45% 40%, rgba(255, 255, 255, 0.3), transparent),
     radial-gradient(2px 2px at 75% 65%, #fff, transparent),
-    radial-gradient(8px 8px at 75% 65%, rgba(255,255,255,0.5), transparent),
+    radial-gradient(8px 8px at 75% 65%, rgba(255, 255, 255, 0.5), transparent),
     radial-gradient(2px 2px at 90% 30%, #fff, transparent),
-    radial-gradient(6px 6px at 90% 30%, rgba(255,255,255,0.4), transparent);
+    radial-gradient(6px 6px at 90% 30%, rgba(255, 255, 255, 0.4), transparent);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   animation: twinkle 3s infinite ease-in-out alternate-reverse;
 }
 
 @keyframes twinkle {
-  0%, 100% { opacity: 0; }
-  50% { opacity: 1; }
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
 }
 
 
@@ -908,7 +915,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .meme-modal-close {

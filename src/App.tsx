@@ -16,6 +16,7 @@ import meme10 from './assets/memes/454cb2d5fa6049eddac143a8defb8c39.jpg';
 import meme11 from './assets/memes/52e79e58427e1c0cdddc452b615bdeb7.jpg';
 import meme12 from './assets/memes/821cf61716fddb2e7b52a58727a775ff.jpg';
 import meme13 from './assets/memes/d1425b35d9226d66e591770116e586c0.jpg';
+import folderSvg from './assets/folder-icon.svg';
 import { SiGoogle } from 'react-icons/si';
 import { FaFileWord, FaFileExcel, FaFilePowerpoint, FaFolderOpen, FaBriefcase, FaStar, FaEnvelope } from 'react-icons/fa';
 
@@ -241,7 +242,7 @@ function App() {
             onClick={() => setIsMemeModalOpen(true)}
             style={{ display: 'inline-flex', fontSize: '1rem' }}
           >
-            <span className="easter-egg-icon" style={{ fontSize: '1.1rem' }}>📁</span>
+            <span className="easter-egg-icon" style={{ fontSize: '1.1rem', display: 'flex', alignItems: 'center' }}><img src={folderSvg} alt="Folder" style={{ width: '1em', height: '1em' }} /></span>
           </div>
         </div>
       </footer>
